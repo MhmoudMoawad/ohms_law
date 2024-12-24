@@ -1,0 +1,1 @@
+#Program will use KVL to find the voltage of all componets in a circuit.
