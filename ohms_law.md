@@ -15,4 +15,4 @@ Where:
 ***
 
     This relationship is used to calculate the current, voltage, or resistance in electrical circuits.
-
+    

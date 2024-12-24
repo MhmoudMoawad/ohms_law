@@ -14,3 +14,5 @@ $$
 - Assign polarities to voltages consistently (positive to negative).
 - Add voltages algebraically, considering their directions.
 - Mesh anaylsis uses KVL
+
+

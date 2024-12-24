@@ -1,13 +1,78 @@
 #Program will use KVL to find the voltage of all componets in a circuit.
 
+while True:
+    
+    print("Hello, welcome to the KVL calculator\n")
+    print("What type of circuit are you working with?: ")
+    print("1.Series\n")
+    print("2.Parrelel\n")
+    print("3.Series Parelel\n")
+    print("0.Exit\n")
 
-print("Hello, welcome to the KVL calculator\n")
-print("What type of circuit are you working with?: ")
-print("1.Series\n")
-print("2.Parrelel\n")
-print("3.Series Parelel\n")
-print("0.Exit\n")
+    option = int(input("Enter your selection: "))
+    
+    if option == 1:
+        source = float(input("How what is the source value of the circuit?: ")) 
+        print("Source Value = ", source, "V")
+        num_resistors = int(input("How many resistors?: "))
+        resistor_values = []
+        for i in range (1, num_resistors + 1):
+            value = float(input(f"Enter the value for resistor {i} (in Ω): ")) 
+            resistor_values.append(value)
+        total_resistance = sum(resistor_values)
+        print("\nList of resistors:")
+        
+        for idx, value in enumerate(resistor_values, start = 1):
+                print(f"{idx}. {value} Ω\n")
+        print(f"\nTotal resistance: {total_resistance} ohms")
+        amp_value = float(input("What is the value of the current going through the circuit?: "))
+        
+        
+        
+        
+            
+        
+    elif option == 2:
+        source = float(input("How what is the source value of the circuit?: "))
+        num_resistors = int(input("How many resistors?: "))
+        print("Source value = ", source, " V")
+        
+        
+        
+        
+          
+    elif option == 3:
+        source = float(input("How what is the source value of the circuit?: "))
+        num_resistors = int(input("How many resistors?: "))
+        print("Source value = ", source, " V")
+        
+        
+        
+        
+    
+    elif option == 0:
+        print("Exit")
+        break
 
-
-source = float(input("How what is the source value of the circuit?: "))
-num_resistors = int(input("How many resistors?: "))
+    
+    
+    
+    
+#    source = float(input("How what is the source value of the circuit?: "))
+#    num_resistors = int(input("How many resistors?: "))
+#    out = [list() for i in range(num_resistors)]
+#    val_resistors = float(num_resistors)
+#    more_comp = input("Are there any other components? Y(y) or N(n)\n")
+#
+#    if more_comp == "y" or "Y":
+#        print ("What other componets do you have in your circuit?")
+#        print("1. Resistor")
+#        print("2. Inductor")
+#        print("3. Capacitor")
+#
+#    elif more_comp == "n" or "N":
+#        print("We will start calculations")
+#
+#    else:
+#        print("Exit")
+    
