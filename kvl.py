@@ -5,29 +5,36 @@ while True:
     print("Hello, welcome to the KVL calculator\n")
     print("What type of circuit are you working with?: ")
     print("1.Series\n")
-    print("2.Parrelel\n")
-    print("3.Series Parelel\n")
+    print("2.Parrellel\n")
+    print("3.Series Parellel\n")
     print("0.Exit\n")
 
     option = int(input("Enter your selection: "))
     
     if option == 1:
-        source = float(input("How what is the source value of the circuit?: ")) 
+        source = float(input("What is the source value of the circuit ?: ")) 
         print("Source Value = ", source, "V")
         num_resistors = int(input("How many resistors?: "))
         resistor_values = []
         for i in range (1, num_resistors + 1):
-            value = float(input(f"Enter the value for resistor {i} (in Ω): ")) 
+            value = float(input(f"\nEnter the value for resistor {i} (in Ω): ")) 
             resistor_values.append(value)
         total_resistance = sum(resistor_values)
-        print("\nList of resistors:")
-        
-        for idx, value in enumerate(resistor_values, start = 1):
+        #print("\nList of resistors:")
+        #
+        #for idx, value in enumerate(resistor_values, start = 1):
+        #    print(f"{idx}. {value} Ω\n")
+        #    print(f"\nTotal resistance: {total_resistance} ohms")
+        current = input("\nDo you know the current value? Y(y) or N(n): ")
+        if current == "Y" or "y":
+            amp_value = float(input("\nWhat is the current value?: "))
+            print ("\nVolatage: ", source,)
+            print("Current: ", amp_value)
+            print("List of resistors:")
+            for idx, value in enumerate(resistor_values, start = 1):
                 print(f"{idx}. {value} Ω\n")
-        print(f"\nTotal resistance: {total_resistance} ohms")
-        amp_value = float(input("What is the value of the current going through the circuit?: "))
-        
-        
+            print(f"Total resistance: {total_resistance} ohms")       
+        #Todo: I will need to add the calculations
         
         
             

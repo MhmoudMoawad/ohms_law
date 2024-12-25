@@ -11,24 +11,24 @@ while True:
     option = int(input("Enter your selection: "))
 
     if option == 1:
-        c = float(input("\nEnter the Current value: "))
-        r = float(input("\nEnter the Resistance value: "))
+        c = float(input("\nEnter the Current value (A): "))
+        r = float(input("\nEnter the Resistance value: (Ω)"))
         v = c * r
         print(v , " V")
         answer = v
         break
         
     elif option == 2:
-        v = float(input("\nEnter the Voltage value: "))
-        r = float(input("\nEnter the Resistance value: "))
+        v = float(input("\nEnter the Voltage value (V): "))
+        r = float(input("\nEnter the Resistance value (Ω): "))
         c = v / r
         print(c , " A" )
         answer = c
         break
                 
     elif option == 3:
-        v = float(input("\nEnter the Voltage value: "))
-        c = float(input("\nEnter the Current value: "))
+        v = float(input("\nEnter the Voltage value (V): "))
+        c = float(input("\nEnter the Current value (A): "))
         r = v / c
         print(r , " Ω")
         answer = r
@@ -36,6 +36,6 @@ while True:
 
     elif option == 0:
         break
-    
+
 
 #If the number is in decimal form convert to the closest whole number using scientific notation and eginering notation
