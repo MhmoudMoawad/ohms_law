@@ -101,3 +101,26 @@ while True:
     elif option == 0:               #Ends Program
         print("Exit")
         break
+
+    
+    
+    
+    
+#    source = float(input("How what is the source value of the circuit?: "))
+#    num_resistors = int(input("How many resistors?: "))
+#    out = [list() for i in range(num_resistors)]
+#    val_resistors = float(num_resistors)
+#    more_comp = input("Are there any other components? Y(y) or N(n)\n")
+#
+#    if more_comp == "y" or "Y":
+#        print ("What other componets do you have in your circuit?")
+#        print("1. Resistor")
+#        print("2. Inductor")
+#        print("3. Capacitor")
+#
+#    elif more_comp == "n" or "N":
+#        print("We will start calculations")
+#
+#    else:
+#        print("Exit")
+    
