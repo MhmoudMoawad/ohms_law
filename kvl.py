@@ -13,7 +13,7 @@ while True:
 
     option = int(input("Enter your selection: "))
     
-    if option == 1:                     #This option will calculate only series circuits
+    if option == 1:     #This option will calculate only series circuits
         
         #The user will input the values of the componets in the circuits
         source = float(input("What is the source value of the circuit ?: ")) 
@@ -47,13 +47,10 @@ while True:
             print("The formula for total resistance: RT = R1 + R2 + R3 ... ")
             print(f"Total resistance: {total_resistance} Ω")
             input("Press any key to continue")
-            
-              
-        #Todo: I will need to add the calculations
-        
+                    
             
         
-    elif option == 2: #This circuit is for only parellel circuits
+    elif option == 2:   #This circuit is for only parellel circuits
         source = float(input("How what is the source value of the circuit?: "))
         print("Source value = ", source, " V")
         
@@ -69,7 +66,7 @@ while True:
         input("Press any key to continue.")
         
           
-    elif option == 3: #This option will calcuate series parellel circuits
+    elif option == 3:   #This option will calcuate series parellel circuits
         
         #series
         source = float(input("What is the source value of the circuit ?: ")) 
